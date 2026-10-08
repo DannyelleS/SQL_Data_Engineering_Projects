@@ -13,7 +13,7 @@ LIMIT 10;
 
 SELECT *
 FROM skills_dim
-LIMIT 5;
+LIMIT 10;
 
 SELECT *
 FROM information_schema.columns
