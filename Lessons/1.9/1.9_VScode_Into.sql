@@ -1,1 +1,1 @@
-SELECT 42 as answer;
+SELECT job_title FROM job_postings_fact;
