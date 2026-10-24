@@ -2,7 +2,7 @@
 
 An end-to-end data engineering pipeline creating a normalised star schema data warehouse by transforming raw CSV files from Google Cloud Storage (GCS), this is then used to build analytical data marts.
 
-![Data Pipeline](/1_EDA\Images\1_2_Project2_Data_Pipeline.png)
+![Data Pipeline](../1_EDA/Images/1_2_Project2_Data_Pipeline.png)
 
 ## Executive Summary (For Hiring Managers)
 
@@ -49,7 +49,7 @@ Raw job posting data arrives as CSV files in GCS which does not have the structr
 
 ## Pipeline Architecture
 
-![Project 2 Data Pipeline](/1_EDA\Images\1_2_Project2_Data_Pipeline.png)
+![Project 2 Data Pipeline](../1_EDA/Images/1_2_Project2_Data_Pipeline.png)
 
 The pipeline transforms job posting CSVs from GCS into a normalised star schema data warehouse; It then builds specialised data marts. BI tools such as Excel, Power BI and Python then consume from both the warehouse and the marts.
 
@@ -57,7 +57,7 @@ The pipeline transforms job posting CSVs from GCS into a normalised star schema 
 
 The data warehouse implements a star schema with company_dim, skills_dim, skills_job_dim and job_postings_fact tables.
 
-![Data Warehouse](/1_EDA\Images\1_2_Data_Warehouse.png)
+![Data Warehouse](../1_EDA/Images/1_2_Data_Warehouse.png)
 
 - **SQL Files:**
     - [01_create_tables_dw.sql](01_create_tables_dw.sql) – Defines star schema with 4 core tables
@@ -69,7 +69,7 @@ The data warehouse implements a star schema with company_dim, skills_dim, skills
 
 Denormalised table with all dimensions for ad-hoc queries.
 
-![Flat Mart](/1_EDA\Images\1_2_Flat_Mart.png)
+![Flat Mart](../1_EDA/Images/1_2_Flat_Mart.png)
 
 - **SQL File:** [03_create_flat_mart.sql](03_create_flat_mart.sql) – Builds denormalized table with all dimensions joined
 - **Purpose:** Denormalised table for quick ad-hoc queries
@@ -79,7 +79,7 @@ Denormalised table with all dimensions for ad-hoc queries.
 
 Time-series skill demand analysis with additive measures.
 
-![Skills Mart](/1_EDA\Images\1_2_Skills_Mart.png)
+![Skills Mart](../1_EDA/Images/1_2_Skills_Mart.png)
 
 - **SQL File:** [04_create_skills_mart.sql](04_create_skills_mart.sql) – Builds time-series skill demand mart
 - **Purpose:** Time series analysis of skill demand over time with additive measures
@@ -91,7 +91,7 @@ Time-series skill demand analysis with additive measures.
 
 Priority role tracking with incremental updates using MERGE operations.
 
-![Priority Mart](/1_EDA\Images\1_2_Priority_Mart.png)
+![Priority Mart](../1_EDA/Images/1_2_Priority_Mart.png)
 
 - **SQL Files:**
     - [05_create_priority_mart.sql](05_create_priority_mart.sql) - Initial build of priority roles and jobs snapshot
