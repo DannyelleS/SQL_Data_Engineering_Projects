@@ -14,7 +14,7 @@ SQL- driven analysis of data engineer job market trends using advanced querying 
 
 **Skills:** Complex jojns, aggregations, analytical functions, data quality validation.
 
-### [1. WH_Mart_Build](/2_DW_Mart_Build) - Data Pipeline - Data Warehouse and Mart
+### [1. WH_Mart_Build]![Data Pipeline](1_EDA/Images/1_2_Project2_Data_Pipeline.png) - Data Pipeline - Data Warehouse and Mart
 
 ![Data Pipeline](/1_EDA\Images\1_2_Project2_Data_Pipeline.png)
 
